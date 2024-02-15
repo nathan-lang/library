@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 75vw;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  height: 15vh;
+  width: 100vw;
+  box-shadow: 3px 3px #e0dede;
+}
+
+.logo {
+  font-size: 25px;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  color: darkgreen;
+  text-shadow: 2px 2px 2px #e0dede;
+}
+
+.title {
+  position: absolute;
+  top: 20vh;
+}
+
+.book-list {
+  position: absolute;
+  top: 30vh;
+  display: inline-grid;
+  grid-template: repeat(2, 150px) / repeat(10, 110px);
+  row-gap: 20px;
+  column-gap: 25px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-book {
+  position: absolute;
+  bottom: 10vh;
+  background: #f0f7d7;
+  border: 1px solid #ebebeb;
+  box-shadow: 3px 3px 3px #e0dede;
+}
+
+#book-title,
+#book-author,
+#book-pages,
+#book-read {
+  border: none;
+  border-radius: 10px;
+}
+
+#book-button {
+  border: none;
+  background: #759920;
+  color: white;
+  border-radius: 5px;
+}
